@@ -9,5 +9,6 @@ namespace PayRoll.TSC.PayRollModel
         [Display(Name = "marital status")]
         public string Name { get; set; }
         public virtual ICollection<StaffProfile> Staffprofile { get; set; }
+        public virtual ICollection<Employees> Employees { get; set; }
     }
 }

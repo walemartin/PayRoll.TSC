@@ -9,5 +9,6 @@ namespace PayRoll.TSC.PayRollModel
         [Display(Name = "Job title")]
         public string Name { get; set; }
         public virtual ICollection<StaffProfile> Staffprofile { get; set; }
+        public virtual ICollection<WorkData> WorkDatas { get; set; }
     }
 }

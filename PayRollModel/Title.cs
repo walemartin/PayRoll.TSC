@@ -11,5 +11,6 @@ namespace PayRoll.TSC.PayRollModel
 
 
         public virtual ICollection<StaffProfile> Staffprofile { get; set; }
+        public virtual ICollection<Employees> Employees { get; set; }
     }
 }

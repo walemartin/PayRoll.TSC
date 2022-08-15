@@ -44,7 +44,13 @@ namespace PayRoll.TSC.PayRollModel
         [DataType(DataType.Currency)]
         public decimal NHISMonthlyAmt { get; set; }
 
+        public int? LeaveTypeID { get; set; }
+        public virtual LeaveType LeaveType { get; set; }
 
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Date")]
+        public DateTime? PostedDate { get; set; }
 
     }
 }

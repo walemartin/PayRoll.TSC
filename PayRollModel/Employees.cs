@@ -11,6 +11,9 @@ namespace PayRoll.TSC.PayRollModel
         [Display(Name = "staff number")]
         public string StaffNo { get; set; } = string.Empty;
 
+        public int? TitleID { get; set; }
+        public virtual Title Title { get; set; }
+
         [StringLength(100)]
         [Display(Name = "employee name")]
         public string EmployeeName { get; set; } = string.Empty;
@@ -48,6 +51,9 @@ namespace PayRoll.TSC.PayRollModel
         public int? NationalityID { get; set; }
         public virtual Nationality Nationality { get; set; }
 
-
+        [DataType(DataType.DateTime)]
+        [DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        [Display(Name = "Date")]
+        public DateTime? PostedDate { get; set; }
     }
 }

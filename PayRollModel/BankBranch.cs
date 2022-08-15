@@ -7,7 +7,8 @@ namespace PayRoll.TSC.PayRollModel
         public int ID { get; set; }
 
         [Display(Name = "bank")]
-        public string Name { get; set; }
+        public string Bank { get; set; } = string.Empty;
         public virtual ICollection<StaffProfile> Staffprofile { get; set; }
+        public virtual ICollection<WorkData> WorkDatas { get; set; }
     }
 }
