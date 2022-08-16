@@ -25,6 +25,7 @@ namespace PayRoll.TSC.PayRollModel
     }
     public class LeaveRequest
     {
+        //at the posting of the leave request create an algorithm for looping dates based on days of leave and start date .the algorith must exclude weekends(saturdays and sundays). and update the leavebalance create method action.
         public int Id { get; set; }
 
         [StringLength(100)]

@@ -37,4 +37,20 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
 	public DbSet<JobTitle>? JobTitle { get; set; }
 
 	public DbSet<NavigationMenuViewModel>? NavigationMenuViewModel { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.Employees>? Employees { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.LeaveType>? LeaveType { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.LeaveRequest>? LeaveRequest { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.LeaveAllowance>? LeaveAllowance { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.MaritalStatus>? MaritalStatus { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.Nationality>? Nationality { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.NextOfKin>? NextOfKin { get; set; }
+
+	public DbSet<PayRoll.TSC.PayRollModel.PaymentMode>? PaymentMode { get; set; }
 }
