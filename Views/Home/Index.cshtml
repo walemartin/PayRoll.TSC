@@ -1,8 +1,104 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+.btn {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
 
+.btn:hover {
+  background-color: #3e8e41;
+  color: white;
+}
+</style>
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="row">
+    <p>HR/Payroll</p>
+     <div class="col-sm-3">
+          <a href="@Url.Action("Create","Employees")" class="btn">Employee</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","LeaveAllowances")" class="btn">Leave Allowance</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","LeaveRequests")" class="btn">Leave Request</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Index","WorkDatas")" class="btn">Work Data</a>
+   </div>
+
+</div>
+
+<div class="row">
+    <p>Settings</p>
+     <div class="col-sm-3">
+          <a href="@Url.Action("Create","AccountTypes")" class="btn">Account type</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","LeaveTypes")" class="btn">Leave type</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","MaritalStatus")" class="btn">Marital Status</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","Nationalities")" class="btn">Nationality</a>
+   </div>
+
+</div>
+
+<div class="row">
+    <p>Settings 2</p>
+     <div class="col-sm-3">
+          <a href="@Url.Action("Create","NextOfKins")" class="btn">Next of Kin</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","PaymentModes")" class="btn">Payment Mode</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","StateOfOrigins")" class="btn">State of Origin</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","NHFs")" class="btn">National Housing Fund</a>
+   </div>
+
+</div>
+
+<div class="row">
+    <p>Settings 3</p>
+     <div class="col-sm-3">
+          <a href="@Url.Action("Create","Pensions")" class="btn">Pension</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","SalaryBreakdowns")" class="btn">Salary Breakdown</a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","Titles")" class="btn">Title </a>
+   </div>
+
+    <div class="col-sm-3">
+          <a href="@Url.Action("Create","BankBranches")" class="btn">Bank</a>
+   </div>
+
 </div>

@@ -38,19 +38,33 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser>
 
 	public DbSet<NavigationMenuViewModel>? NavigationMenuViewModel { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.Employees>? Employees { get; set; }
+	public DbSet<Employees>? Employees { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.LeaveType>? LeaveType { get; set; }
+	public DbSet<LeaveType>? LeaveType { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.LeaveRequest>? LeaveRequest { get; set; }
+	public DbSet<LeaveRequest>? LeaveRequest { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.LeaveAllowance>? LeaveAllowance { get; set; }
+	public DbSet<LeaveAllowance>? LeaveAllowance { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.MaritalStatus>? MaritalStatus { get; set; }
+	public DbSet<MaritalStatus>? MaritalStatus { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.Nationality>? Nationality { get; set; }
+	public DbSet<Nationality>? Nationality { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.NextOfKin>? NextOfKin { get; set; }
+	public DbSet<NextOfKin>? NextOfKin { get; set; }
 
-	public DbSet<PayRoll.TSC.PayRollModel.PaymentMode>? PaymentMode { get; set; }
+	public DbSet<PaymentMode>? PaymentMode { get; set; }
+
+	public DbSet<SalaryGrade>? SalaryGrade { get; set; }
+
+	public DbSet<StateOfOrigin>? StateOfOrigin { get; set; }
+
+	public DbSet<NHF>? NHF { get; set; }
+
+	public DbSet<Pension>? Pension { get; set; }
+
+	public DbSet<SalaryBreakdown>? SalaryBreakdown { get; set; }
+
+	public DbSet<Title>? Title { get; set; }
+
+	public DbSet<WorkData>? WorkData { get; set; }
 }
